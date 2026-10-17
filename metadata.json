@@ -1,0 +1,6 @@
+{
+  "name": "சுபமதி & முரளிதரன் வளைகாப்பு விழா அழைப்பிதழ்",
+  "description": "சு. சுபமதி மற்றும் லெ. முரளிதரன் வளைகாப்பு விழா டிஜிட்டல் அழைப்பிதழ் - 25 அக்டோபர் 2026, சிதம்பரம்.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

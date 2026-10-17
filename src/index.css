@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-tamil: 'Noto Serif Tamil', serif;
+    --font-sans-tamil: 'Noto Sans Tamil', sans-serif;
+    --font-royal: 'Cinzel', serif;
+  }
+
+  body {
+    font-family: var(--font-sans-tamil);
+    background-color: #140205;
+    color: #20572C;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-tamil {
+    font-family: var(--font-serif-tamil);
+  }
+}
+
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Antique gold foil gradient & borders */
+.gold-gradient {
+  background: linear-gradient(135deg, #ECC880 0%, #C6A15B 50%, #9E7430 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #7A571B 0%, #C6A15B 45%, #70451F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px rgba(236, 200, 128, 0.45), inset 0 0 10px rgba(198, 161, 91, 0.2);
+}
+
+/* Velvet curtain fold lighting effects */
+.curtain-velvet {
+  background: linear-gradient(135deg, #3A050D 0%, #730D1A 40%, #8F1223 70%, #560912 100%);
+}
+
+.curtain-shadow-left {
+  box-shadow: 12px 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.curtain-shadow-right {
+  box-shadow: -12px 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Traditional Kolam / floral background overlay */
+.tamil-pattern-bg {
+  background-color: #FFFDF3;
+  background-image: radial-gradient(#20572C 0.65px, transparent 0.65px), radial-gradient(#C6A15B 0.65px, #FFFDF3 0.65px);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #140205;
+}
+::-webkit-scrollbar-thumb {
+  background: #C6A15B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ECC880;
+}
